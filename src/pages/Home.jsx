@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Home = () => {
-  const [dogs, setDogs] = useState({});
+  const [dogs, setDogs] = useState([]);
   const [text, setText] = useState("");
   const [searched, setSearched] = useState(false);
 
@@ -24,7 +24,7 @@ const Home = () => {
     e.preventDefault();
 
     // searchForDog();
-    setSearched(true);
+    // setSearched(true);
   };
 
   return (
@@ -51,7 +51,7 @@ const Home = () => {
               </p>
 
               <form
-                onSubmit={handleSubmit}
+                // onSubmit={handleSubmit}
                 className="max-w-xl mx-auto"
                 autoComplete="off"
               >
