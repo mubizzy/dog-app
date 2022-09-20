@@ -45,7 +45,17 @@ const Home = () => {
                 onSubmit={handleSubmit}
                 className="max-w-xl mx-auto"
                 autoComplete="off"
-              ></form>
+              >
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Search for a dog / breed"
+                  className="py-2 px-4 rounded shadow w-full bg-slate-400 text-white placeholder-white"
+                  value={text}
+                  onChange={(e) => setText(e.target.value)}
+                />
+              </form>
             </div>
           </section>
         </>
