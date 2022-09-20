@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 const Home = () => {
   const [dogs, setDogs] = useState({});
   const [text, setText] = useState("");
+  const [searched, setSearched] = useState(false);
+
   useEffect(() => {
     const fetchDogData = async () => {
       try {
@@ -21,7 +23,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    searchForDog();
+    // searchForDog();
     setSearched(true);
   };
 
@@ -63,6 +65,14 @@ const Home = () => {
                   onChange={(e) => setText(e.target.value)}
                 />
               </form>
+            </div>
+
+            <div>
+              {dogs.map((dog) => (
+                <article key={dog.id}>
+                  <img src="{dog.image.url}" alt="" />
+                </article>
+              ))}
             </div>
           </section>
         </>
