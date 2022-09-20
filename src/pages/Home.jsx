@@ -51,7 +51,7 @@ const Home = () => {
               </p>
 
               <form
-                // onSubmit={handleSubmit}
+                onSubmit={handleSubmit}
                 className="max-w-xl mx-auto"
                 autoComplete="off"
               >
@@ -67,7 +67,7 @@ const Home = () => {
               </form>
             </div>
 
-            <div>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 my-10 lg:my-20">
               {dogs.map((dog) => (
                 <article key={dog.id}>
                   <img src={dog.image.url} alt={dog.name} />
