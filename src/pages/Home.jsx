@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Home = () => {
   const [dogs, setDogs] = useState({});
-
+  const [text, setText] = useState("");
   useEffect(() => {
     const fetchDogData = async () => {
       try {
@@ -17,6 +17,13 @@ const Home = () => {
 
     fetchDogData();
   }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    searchForDog();
+    setSearched(true);
+  };
 
   return (
     <>
