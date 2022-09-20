@@ -70,7 +70,9 @@ const Home = () => {
             <div>
               {dogs.map((dog) => (
                 <article key={dog.id}>
-                  <img src="{dog.image.url}" alt="" />
+                  <img src={dog.image.url} alt={dog.name} />
+                  <h3>{dog.name}</h3>
+                  <p>Bred For:{dog.bred_for}</p>
                 </article>
               ))}
             </div>
