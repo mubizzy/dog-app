@@ -21,10 +21,22 @@ const Home = () => {
     fetchDogData();
   }, []);
 
+  const searchForDog = async () => {
+    try {
+      const res = await fetch(
+        `https://api.thedogapi.com/v1/breeds/search?q=${text}`
+      );
+      const data = await res.json();
+      setDogs(data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // searchForDog();
+    searchForDog();
     setSearched(true);
   };
 
@@ -92,7 +104,7 @@ const Home = () => {
                 ))
               ) : (
                 <>
-                  { {dogs.map((dog) => (
+                  {dogs.map((dog) => (
                     <Link
                       to={`/${dog.name}`}
                       key={dog.id}
@@ -112,8 +124,7 @@ const Home = () => {
                         </p>
                       </article>
                     </Link>
-                  ))} }
-                  
+                  ))}
                 </>
               )}
             </div>
