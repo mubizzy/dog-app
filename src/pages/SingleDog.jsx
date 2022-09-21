@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 const SingleDog = () => {
   const [dog, setDog] = useState(null);
+  const { name } = useParams();
   useEffect(() => {
     const fetchDogData = async () => {
       try {
@@ -15,7 +17,7 @@ const SingleDog = () => {
     };
 
     fetchDogData();
-  }, []);
+  }, [name]);
   return <div>SingleDog</div>;
 };
 
