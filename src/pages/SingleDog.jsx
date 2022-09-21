@@ -19,9 +19,7 @@ const SingleDog = () => {
     fetchDogData();
   }, [name]);
   return (
-    <section className="max-w-5xl mx-auto flex items-center justify-center h-screen">
-      >
-    </section>
+    <section className="max-w-5xl mx-auto flex items-center justify-center h-screen"></section>
   );
 };
 
