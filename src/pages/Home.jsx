@@ -84,7 +84,9 @@ const Home = () => {
                   </article>
                 ))}
               </Link>
+          
             </div>
+          
           </section>
         </>
       )}
