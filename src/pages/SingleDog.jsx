@@ -18,7 +18,8 @@ const SingleDog = () => {
 
     fetchDogData();
   }, [name]);
-  return <div>SingleDog</div>;
+  return( <>
+  <section className="max-w-5xl mx-auto flex items-center justify-center h-screen">s)
 };
 
 export default SingleDog;
