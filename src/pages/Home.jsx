@@ -92,7 +92,7 @@ const Home = () => {
                 ))
               ) : (
                 <>
-                  {dogs.map((dog) => (
+                  { {dogs.map((dog) => (
                     <Link
                       to={`/${dog.name}`}
                       key={dog.id}
@@ -112,7 +112,8 @@ const Home = () => {
                         </p>
                       </article>
                     </Link>
-                  ))}
+                  ))} }
+                  
                 </>
               )}
             </div>
