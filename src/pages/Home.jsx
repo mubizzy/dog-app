@@ -76,11 +76,18 @@ const Home = () => {
                 key={dog.id}
                 className="bg-slate-700 p-4 rounded hover:bg-slate-600 transition-all duration-200"
               >
-                  <article key={dog.id}>
-                    <img src={dog.image.url} alt={dog.name} />
-                    <h3>{dog.name}</h3>
-                    <p>Bred For:{dog.bred_for}</p>
-                  </article>
+                 <article>
+                      <img
+                        src={dog.image.url}
+                        alt={dog.name}
+                        loading="lazy"
+                        className="rounded md:h-72 w-full object-cover"
+                      />
+                      <h3 className="text-white text-lg font-bold mt-4">
+                        {dog.name}
+                      </h3>
+                      <p className="text-slate-400">Bred For: {dog.bred_for}</p>
+                    </article>  
               </Link>
             ))
           ) : (
