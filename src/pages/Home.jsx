@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [dogs, setDogs] = useState([]);
@@ -24,7 +25,7 @@ const Home = () => {
     e.preventDefault();
 
     // searchForDog();
-    // setSearched(true);
+    setSearched(true);
   };
 
   return (
