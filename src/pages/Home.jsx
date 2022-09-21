@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"
 
 const Home = () => {
   const [dogs, setDogs] = useState([]);
@@ -69,16 +68,19 @@ const Home = () => {
             </div>
 
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 my-10 lg:my-20">
-            <Link
-                    to={`/${dog.name}`}
-                    key={dog.id}</Link>
-              {dogs.map((dog) => (
-                <article key={dog.id}>
-                  <img src={dog.image.url} alt={dog.name} />
-                  <h3>{dog.name}</h3>
-                  <p>Bred For:{dog.bred_for}</p>
-                </article>
-              ))}
+              <Link
+                to={`/${dog.name}`}
+                key={dog.id}
+                className="bg-slate-700 p-4 rounded hover:bg-slate-600 transition-all duration-200"
+              >
+                {dogs.map((dog) => (
+                  <article key={dog.id}>
+                    <img src={dog.image.url} alt={dog.name} />
+                    <h3>{dog.name}</h3>
+                    <p>Bred For:{dog.bred_for}</p>
+                  </article>
+                ))}
+              </Link>
             </div>
           </section>
         </>
