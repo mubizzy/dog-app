@@ -28,7 +28,17 @@ const SingleDog = () => {
             key={doggy.id}
             className='grid grid-cols-1 gap-8 p-8 md:grid-cols-2 md:place-items-center"'
           >
-            <article></article>
+            <article>
+              <img
+                src={`https://cdn2.thedogapi.com/images/${doggy.reference_image_id}.jpg`}
+                alt={doggy.name}
+              />
+            </article>
+            <article>
+              <h1 className="text-3xl font-bold text-white mb-8 lg:text-5xl">
+                {item.name}
+              </h1>
+            </article>
           </div>
         ))}
       </section>
