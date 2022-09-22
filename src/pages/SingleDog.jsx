@@ -67,7 +67,7 @@ const SingleDog = () => {
                 </li>
                 <li>
                   <span className="font-bold text-slate-200">Temperament:</span>{" "}
-                  {item.temperament}
+                  {doggy.temperament}
                 </li>
               </ul>
 
