@@ -21,7 +21,10 @@ const SingleDog = () => {
     fetchDogData();
   }, [name]);
   return (
-    <section className="max-w-5xl mx-auto flex items-center justify-center h-screen"></section>
+    <>
+      {!dogs?(<h1>Loading </h1>):()}
+    </>
+    // <section className="max-w-5xl mx-auto flex items-center justify-center h-screen"></section>
   );
 };
 
