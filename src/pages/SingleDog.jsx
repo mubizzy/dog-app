@@ -55,7 +55,7 @@ const SingleDog = () => {
                 </li>
                 <li>
                   <span className="font-bold text-slate-200">Weight:</span>{" "}
-                  {item.weight.metric} kgs
+                  {doggy.weight.metric} kgs
                 </li>
                 <li>
                   <span className="font-bold text-slate-200">Breed Group:</span>{" "}
