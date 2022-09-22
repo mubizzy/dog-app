@@ -57,6 +57,10 @@ const SingleDog = () => {
                   <span className="font-bold text-slate-200">Weight:</span>{" "}
                   {item.weight.metric} kgs
                 </li>
+                <li>
+                  <span className="font-bold text-slate-200">Breed Group:</span>{" "}
+                  {item.breed_group}
+                </li>
               </ul>
 
               <Link
