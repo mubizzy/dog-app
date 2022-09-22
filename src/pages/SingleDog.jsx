@@ -59,7 +59,7 @@ const SingleDog = () => {
                 </li>
                 <li>
                   <span className="font-bold text-slate-200">Breed Group:</span>{" "}
-                  {item.breed_group}
+                  {doggy.breed_group}
                 </li>
                 <li>
                   <span className="font-bold text-slate-200">Lifespan:</span>{" "}
