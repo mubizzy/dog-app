@@ -47,11 +47,11 @@ const SingleDog = () => {
               <ul className="text-sm text-slate-400 leading-loose lg:text-base lg:leading-relaxed">
                 <li>
                   <span className="font-bold text-slate-200">Bred For:</span>{" "}
-                  {item.bred_for}
+                  {doggy.bred_for}
                 </li>
                 <li>
                   <span className="font-bold text-slate-200">Height:</span>{" "}
-                  {item.height.metric} cm
+                  {doggy.height.metric} cm
                 </li>
               </ul>
 
