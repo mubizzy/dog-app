@@ -63,7 +63,7 @@ const SingleDog = () => {
                 </li>
                 <li>
                   <span className="font-bold text-slate-200">Lifespan:</span>{" "}
-                  {item.life_span}
+                  {doggy.life_span}
                 </li>
                 <li>
                   <span className="font-bold text-slate-200">Temperament:</span>{" "}
