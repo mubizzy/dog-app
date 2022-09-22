@@ -23,7 +23,7 @@ const SingleDog = () => {
   return (
     <>
       <section className="max-w-5xl mx-auto flex items-center justify-center h-screen">
-        {dog.map((doggy) => (
+        {dog.map((item) => (
           <div
             key={doggy.id}
             className='grid grid-cols-1 gap-8 p-8 md:grid-cols-2 md:place-items-center"'
@@ -43,6 +43,13 @@ const SingleDog = () => {
                   {doggy.description}
                 </p>
               )}
+
+              <Link
+                to="/"
+                className="inline-block bg-slate-600 py-2 px-6 rounded mt-8 text-white hover:bg-slate-500 transition-all duration-200"
+              >
+                &larr; Back
+              </Link>
             </article>
           </div>
         ))}
