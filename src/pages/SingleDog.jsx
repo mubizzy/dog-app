@@ -27,7 +27,9 @@ const SingleDog = () => {
           <div
             key={doggy.id}
             className='grid grid-cols-1 gap-8 p-8 md:grid-cols-2 md:place-items-center"'
-          ></div>
+          >
+            <article></article>
+          </div>
         ))}
       </section>
     </>
