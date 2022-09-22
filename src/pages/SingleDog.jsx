@@ -65,6 +65,10 @@ const SingleDog = () => {
                   <span className="font-bold text-slate-200">Lifespan:</span>{" "}
                   {item.life_span}
                 </li>
+                <li>
+                  <span className="font-bold text-slate-200">Temperament:</span>{" "}
+                  {item.temperament}
+                </li>
               </ul>
 
               <Link
