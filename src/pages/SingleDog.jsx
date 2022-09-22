@@ -38,6 +38,11 @@ const SingleDog = () => {
               <h1 className="text-3xl font-bold text-white mb-8 lg:text-5xl">
                 {doggy.name}
               </h1>
+              {item.description && (
+                <p className="text-slate-400 mb-8 text-sm lg:text-base leading-loose lg:leading-relaxed">
+                  {item.description}
+                </p>
+              )}
             </article>
           </div>
         ))}
