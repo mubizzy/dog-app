@@ -53,6 +53,10 @@ const SingleDog = () => {
                   <span className="font-bold text-slate-200">Height:</span>{" "}
                   {doggy.height.metric} cm
                 </li>
+                <li>
+                  <span className="font-bold text-slate-200">Weight:</span>{" "}
+                  {item.weight.metric} kgs
+                </li>
               </ul>
 
               <Link
