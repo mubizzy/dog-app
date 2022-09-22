@@ -61,6 +61,10 @@ const SingleDog = () => {
                   <span className="font-bold text-slate-200">Breed Group:</span>{" "}
                   {item.breed_group}
                 </li>
+                <li>
+                  <span className="font-bold text-slate-200">Lifespan:</span>{" "}
+                  {item.life_span}
+                </li>
               </ul>
 
               <Link
