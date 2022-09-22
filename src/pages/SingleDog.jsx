@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const SingleDog = () => {
-  const [dog, setDog] = useState(null);
+  const [dog, setDog] = useState([]);
   const { name } = useParams();
   useEffect(() => {
-    const fetchDogData = async () => {
+    const fetchSingleDogData = async () => {
       try {
         const res = await fetch(
           `https://api.thedogapi.com/v1/breeds/search?q=${name}`
@@ -18,7 +18,7 @@ const SingleDog = () => {
       }
     };
 
-    fetchDogData();
+    fetchSingleDogData();
   }, [name]);
   return (
     <>
@@ -43,6 +43,8 @@ const SingleDog = () => {
                   {doggy.description}
                 </p>
               )}
+
+              <ul className="text-sm text-slate-400 leading-loose lg:text-base lg:leading-relaxed"></ul>
 
               <Link
                 to="/"
