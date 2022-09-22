@@ -22,7 +22,9 @@ const SingleDog = () => {
   }, [name]);
   return (
     <>
-      {!dogs?(<h1>Loading </h1>):()}
+      {!dogs?(<h1>Loading </h1>):(
+        
+      )}
     </>
     // <section className="max-w-5xl mx-auto flex items-center justify-center h-screen"></section>
   );
