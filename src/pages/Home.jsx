@@ -86,7 +86,7 @@ const Home = () => {
                   <Link
                     to={`/${dog.name}`}
                     key={dog.id}
-                    className="bg-slate-700 p-4 rounded hover:bg-slate-600 transition-all duration-200"
+                    className="bg-emerald-700 p-4 rounded hover:bg-emerald-600 transition-all duration-200"
                   >
                     <article>
                       <img
@@ -98,7 +98,9 @@ const Home = () => {
                       <h3 className="text-white text-lg font-bold mt-4">
                         {dog.name}
                       </h3>
-                      <p className="text-slate-400">Bred For: {dog.bred_for}</p>
+                      <p className="text-emerald-400">
+                        Bred For: {dog.bred_for}
+                      </p>
                     </article>
                   </Link>
                 ))
