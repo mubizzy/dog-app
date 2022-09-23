@@ -73,7 +73,7 @@ const SingleDog = () => {
 
               <Link
                 to="/"
-                className="inline-block bg-slate-600 py-2 px-6 rounded mt-8 text-white hover:bg-slate-500 transition-all duration-200"
+                className="inline-block bg-emerald-600 py-2 px-6 rounded mt-8 text-white hover:bg-emerald-500 transition-all duration-200"
               >
                 &larr; Back
               </Link>
