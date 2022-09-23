@@ -121,7 +121,7 @@ const Home = () => {
                         <h3 className="text-white text-lg font-bold mt-4">
                           {dog.name}
                         </h3>
-                        <p className="text-slate-400">
+                        <p className="text-emerald-400">
                           Bred For: {dog.bred_for}
                         </p>
                       </article>
