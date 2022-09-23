@@ -57,7 +57,7 @@ const Home = () => {
                 This application is powered by{" "}
                 <a
                   href="https://thedogapi.com"
-                  className="text-indigo-600 underline active:text-orange-400"
+                  className="text-emerald-600 underline active:text-orange-400"
                 >
                   The Dog Api
                 </a>
